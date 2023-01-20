@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+   
+    background: linear-gradient(132deg, rgb(249, 206, 183) 0.00%, rgb(173, 209, 242) 100.00%);
+}
+
+.customCreation {
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* display: block; */
+    text-align: center;
+    /* background-color: blue; */
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.card-head {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card-head .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-head .circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #d83133; */
+    background-image: linear-gradient(to bottom, #f88103, #f4ecf3, #e2e5ff, #b2e5b9, #09fd21);
+    clip-path: circle(220px at center);
+    transition: 0.5s;
+}
+
+.card-head:hover .circle::before {
+    /* background: #0065c3; */
+    background-image: linear-gradient(to bottom, #f88103, #f4ecf3, #e2e5ff, #b2e5b9, #09fd21);
+    clip-path: circle(400px at center);
+}
+
+.card-head img {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 450px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card-head:hover img {
+    left: 88%;
+    height: 400px;
+    align-items: relative;
+}
+
+.card-head .content {
+    position: relative;
+    width: 90%;
+    left: 20%;
+    padding: 30px 30px 30px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card-head:hover .content {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-head .content h2 {
+    color: rgb(222, 32, 32);
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+    text-align:left;
+}
+
+.card-head .content h3 {
+    color: rgb(18, 21, 201);
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card-head .content p {
+    color: rgb(200, 88, 13);
+    text-align: left;
+}
+
+.card-head .content a {
+    position: relative;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: rgb(195, 76, 76);
+    color: rgb(30, 20, 20);
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.bio {
+    margin: 50px;
+    text-align: bottom;
+    color: #231f9a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 40px;
+}
+
+.car {
+    margin-top: 10px;
+
+    /* width: 500px; */
+    /* height: 500px; */
+    background-color: #b2e5b9;
+    display: flex;
+    flex-direction: row;
+}
+
+.mcent {
+    text-align: center;
+
+}
+
+.about {
+    margin: 30px;
+    width: 400px;
+}
+
+.customCard {
+    border: 5px solid rgb(213, 123, 123);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    padding: 20px 20px;
+    /* border: 2px solid red; */
+    /* background-color: hsl(324, 38%, 95%); */
+    background: linear-gradient(220deg, rgb(251, 165, 116) 0.00%, rgb(216, 245, 251) 76.40%);
+    /* box-shadow: 10px 10px 5px lightblue; */
+    /* max-width:100%; */
+}
+
+.cardImgContainer {
+    /* width:300px; */
+    /* max-width: 100%; */
+}
+
+.cardImg {
+    max-width: 100%;
+}
+
+.cardTitle {
+    /* border:2px solid red; */
+    margin-top: 10px;
+    margin-bottom: 8px;
+    width: 100%;
+    border: 2px solid black;
+    /* background-color: #9dae9f; */
+    background-image: linear-gradient(60deg, #f88103, #f4ecf3, #e2e5ff, #b2e5b9, #09fd21);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardDesc {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.container {
+    background-color: #09fd21;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 10px;
+    margin: 20px;
+}
+
+.SectionAbout {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-flow: wrap;
+    /* margin: 20px 20px 30px 40px; */
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.w3hubs-footer {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #FEECF9;
+    padding: 20px 0px;
+}
+
+.w3hubs-icon {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.w3hubs-icon ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.w3hubs-icon ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #7DCEA0;
+}
+
+.w3hubs-icon ul li a {
+    text-decoration: none;
+    color: #272727;
+    font-size: 25px;
+    display: block;
+}
+
+.w3hubs-icon ul li a i {
+    line-height: 50px;
+}
+
+.w3hubs-icon ul li:hover {
+    background: #e67e22;
+}
+
+.w3hubs-icon ul li a:hover>i {
+    transform: scale(1.6) rotate(25deg);
+}
+
+.w3hubs-nav {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.w3hubs-nav ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+
+.w3hubs-nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.w3hubs-nav ul li a {
+    text-decoration: none;
+    outline: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.w3hubs-nav ul li a:hover {
+    color: #e67e22;
+}
+
+.footer-end {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #7DCEA0;
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.footer-end p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
